@@ -22,8 +22,48 @@ public class Game_bean_machine extends Application{
 			}
 		}
 		*/
-		Scene scene=new Scene(new LinePane(),300,200);
-		Scene scene1=new Scene(pane,300,200);
+		pane.getChildren().add(new Ellipse(280,40,5,5));
+		
+		pane.getChildren().add(new Ellipse(260,60,5,5));
+		pane.getChildren().add(new Ellipse(300,60,5,5));
+		
+		pane.getChildren().add(new Ellipse(240,80,5,5));
+		pane.getChildren().add(new Ellipse(280,80,5,5));
+		pane.getChildren().add(new Ellipse(320,80,5,5));
+		
+		pane.getChildren().add(new Ellipse(220,100,5,5));
+		pane.getChildren().add(new Ellipse(260,100,5,5));
+		pane.getChildren().add(new Ellipse(300,100,5,5));
+		pane.getChildren().add(new Ellipse(340,100,5,5));
+		
+		pane.getChildren().add(new Ellipse(200,120,5,5));
+		pane.getChildren().add(new Ellipse(240,120,5,5));
+		pane.getChildren().add(new Ellipse(280,120,5,5));
+		pane.getChildren().add(new Ellipse(320,120,5,5));
+		pane.getChildren().add(new Ellipse(360,120,5,5));
+		
+		pane.getChildren().add(new Ellipse(180,140,5,5));
+		pane.getChildren().add(new Ellipse(220,140,5,5));
+		pane.getChildren().add(new Ellipse(260,140,5,5));
+		pane.getChildren().add(new Ellipse(300,140,5,5));
+		pane.getChildren().add(new Ellipse(340,140,5,5));
+		pane.getChildren().add(new Ellipse(380,140,5,5));
+		
+		pane.getChildren().add(new Ellipse(160,160,5,5));
+		pane.getChildren().add(new Ellipse(200,160,5,5));
+		pane.getChildren().add(new Ellipse(240,160,5,5));
+		pane.getChildren().add(new Ellipse(280,160,5,5));
+		pane.getChildren().add(new Ellipse(320,160,5,5));
+		pane.getChildren().add(new Ellipse(360,160,5,5));
+		pane.getChildren().add(new Ellipse(400,160,5,5));
+		
+		
+		//for(int i=40;i<=160;i+=20){
+			//pane.getChildren().add(new Ellipse(260,i,5,5));
+		//}
+		
+		Scene scene=new Scene(new LinePane(),600,600);
+		Scene scene1=new Scene(pane,600,600);
 		primaryStage.setTitle("Show");
 		primaryStage.setScene(scene);
 		primaryStage.show();
