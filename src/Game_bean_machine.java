@@ -10,17 +10,24 @@ public class Game_bean_machine extends Application{
 	@Override
 	public void start(Stage primaryStage){
 		Pane pane=new Pane();
-		
-		//for(int i=0;i<5;i++){
-			Ellipse e1=new Ellipse(50,50,5,5);//x位置,y位置,x大小,y大小
-			//e1.setRotate(i*180/16);
-			e1.setRotate(1*180/16);
-			pane.getChildren().add(e1);
-		//}
-		
-		Scene scene=new Scene(pane,300,200);
+		/*
+		for(int i=1;i<=7;i++){
+			for(int k=0;k<i;k+=2){
+				Ellipse e1=new Ellipse(k*20,i*40,5,5);//x位置,y位置,x大小,y大小
+				pane.getChildren().add(e1);
+			}
+			for(int g=1;g<i;g+=2){
+				Ellipse e1=new Ellipse(g*20,(i*40)-20,5,5);
+				pane.getChildren().add(e1);
+			}
+		}
+		*/
+		Scene scene=new Scene(new LinePane(),300,200);
+		Scene scene1=new Scene(pane,300,200);
 		primaryStage.setTitle("Show");
 		primaryStage.setScene(scene);
+		primaryStage.show();
+		primaryStage.setScene(scene1);
 		primaryStage.show();
 		
 	}
