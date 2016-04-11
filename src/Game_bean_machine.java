@@ -10,18 +10,8 @@ public class Game_bean_machine extends Application{
 	@Override
 	public void start(Stage primaryStage){
 		Pane pane=new Pane();
-		/*
-		for(int i=1;i<=7;i++){
-			for(int k=0;k<i;k+=2){
-				Ellipse e1=new Ellipse(k*20,i*40,5,5);//x位置,y位置,x大小,y大小
-				pane.getChildren().add(e1);
-			}
-			for(int g=1;g<i;g+=2){
-				Ellipse e1=new Ellipse(g*20,(i*40)-20,5,5);
-				pane.getChildren().add(e1);
-			}
-		}
-		*/
+
+		
 		pane.getChildren().add(new Ellipse(280,40,5,5));
 		
 		pane.getChildren().add(new Ellipse(260,60,5,5));
@@ -77,32 +67,13 @@ public class Game_bean_machine extends Application{
 		pane.getChildren().add(new Line(260,0,260,20));
 		
 		
-		
-		
-		
-		//for(int i=40;i<=160;i+=20){
-			//pane.getChildren().add(new Ellipse(260,i,5,5));
-		//}
-		
-		//Scene scene=new Scene(new LinePane(),600,600);
+
 		Scene scene1=new Scene(pane,600,400);
 		primaryStage.setTitle("U10316053 Bean game 程柏綸");
-		//primaryStage.setScene(scene);
+
 		primaryStage.show();
 		primaryStage.setScene(scene1);
 		primaryStage.show();
 		
 	}
 }
-/*
-class LinePane extends Pane{
-	public LinePane(){
-		Line line1=new Line(10,10,10,10);
-		line1.endXProperty().bind(widthProperty().subtract(10));
-		line1.endYProperty().bind(heightProperty().subtract(10));
-		line1.setStrokeWidth(5);
-		line1.setStroke(Color.GREEN);
-		getChildren().add(line1);
-	}
-}
-*/
